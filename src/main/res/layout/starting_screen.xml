@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#caccce"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:background="#caccce"
+
+    >
+
+
+    <Button
+        android:id="@+id/learn_button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/locate_button"
+        android:layout_alignStart="@+id/locate_button"
+        android:layout_below="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="53dp"
+        android:onClick="onClick"
+        android:text="Admin Login"
+        android:textColor="#caccce"
+        android:background="#00255b"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#00255b"
+        android:layout_marginTop="50dp"
+        android:id="@+id/view" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+
+        android:layout_marginTop="180dp"
+        android:background="#00255b"
+        android:id="@+id/view2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#00255b"
+        android:layout_marginTop="340dp"
+        android:id="@+id/view3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Main Menu"
+        android:id="@+id/textView"
+        android:layout_marginTop="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:text="Locate"
+        android:background="#00255b"
+        android:id="@+id/locate_button"
+        android:onClick="onClick"
+        android:textColor="#caccce"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/register"
+        android:layout_alignLeft="@+id/register"
+        android:layout_alignStart="@+id/register"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/teacher"
+        android:layout_width="300dp"
+        android:background="#00255b"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Teacher Login"
+        android:textColor="#caccce"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:onClick="onClick"
+        android:textColor="#caccce"
+        android:background="#00255b"
+        android:text="Student Registration"
+        android:layout_below="@+id/sub"
+        android:layout_alignLeft="@+id/teacher"
+        android:layout_alignStart="@+id/teacher" />
+
+    <Button
+        android:id="@+id/submit"
+        android:background="#00255b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#caccce"
+        android:text="Submit"
+        android:visibility="invisible"
+        android:layout_below="@+id/learn_button"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/username"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/teacher"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignRight="@+id/password"
+
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user"
+        android:layout_alignStart="@+id/user"
+        android:layout_below="@+id/teacher"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/sub"
+        android:background="#00255b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/submit"
+        android:layout_alignStart="@+id/submit"
+        android:layout_below="@+id/pass"
+        android:textColor="#caccce"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view"
+        android:text="Admin Section" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view2"
+        android:text="Teacher Section" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view3"
+        android:text="Student Section" />
+
+
+</RelativeLayout>
+
+    </ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#caccce"
+    tools:context="com.example.wipat.TeacherDetails">
+
+    <EditText
+        android:id="@+id/lec_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:hint="Enter Lecture number"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/classID"
+        android:layout_below="@+id/lec_no"
+        android:layout_alignRight="@+id/lec_no"
+        android:layout_alignEnd="@+id/lec_no" />
+
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="Enter Subject"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/classID"
+        android:layout_alignLeft="@+id/lec_no"
+        android:layout_alignStart="@+id/lec_no"
+
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Topic"
+        android:layout_centerHorizontal="true"
+        android:textColor="#caccce"
+        android:background="#00255b"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Start Session" />
+
+    <EditText
+        android:id="@+id/Topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter Topic"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/subject"
+        android:layout_alignLeft="@+id/subject"
+        android:layout_alignStart="@+id/subject" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textColor="#caccce"
+        android:background="#00255b"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Stop session" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/classID"
+        android:layout_alignLeft="@+id/lec_no"
+        android:layout_alignStart="@+id/lec_no"
+        android:text="Class name" />
+</RelativeLayout>

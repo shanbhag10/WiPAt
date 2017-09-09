@@ -1,0 +1,69 @@
+.dataTables_info {
+    float: left;
+    padding: 10px 0px;
+    width: 60%;
+}
+.dataTables_paginate {
+    float: right;
+    padding: 10px 0px; 
+    text-align: right;
+    width: 30%;
+}
+.dataTables_paginate span{ cursor:pointer; padding:0px 3px; font-weight:bold;}
+.dataTables_paginate span:hover{ color:#900;}
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+    float: left;
+    height: 19px;
+    margin-left: 3px;
+    width: 19px;
+}
+.paginate_disabled_previous {
+    background-image: url("../images/back_disabled.jpg");
+}
+.paginate_enabled_previous {
+    background-image: url("../images/back_enabled.jpg");
+}
+.paginate_disabled_next {
+    background-image: url("../images/forward_disabled.jpg");
+}
+.paginate_enabled_next {
+    background-image: url("../images/forward_enabled.jpg");
+}
+.dataTables_length {
+    float: left;
+    width: 40%;
+	padding:5px 0px;
+}
+.dataTables_filter {
+    float: right;
+    text-align: right;
+    width: 50%;
+	padding:5px 0px;
+}
+.fg-toolbar{ clear:both; padding:5px; background:#f1f1f1; display:block;}
+
+tr.odd {
+    background-color: #f4f7fc;
+}
+tr.even {
+    background-color: white;
+}
+
+tr.odd td.sorting_1 {
+    background-color: #e4ecf9;
+}
+tr.odd td.sorting_2 {
+    background-color: #f4f7fc;
+}
+tr.odd td.sorting_3 {
+    background-color: #E0E2FF;
+}
+tr.even td.sorting_1 {
+    background-color: #f4f7fc;
+}
+tr.even td.sorting_2 {
+    background-color: #F2F3FF;
+}
+tr.even td.sorting_3 {
+    background-color: #F9F9FF;
+}
